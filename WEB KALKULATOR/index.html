@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+   <title>Web Calculator</title>
+   <link rel="stylesheet" href="assets/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ 
+<body>
+   <div class="flex-konte-kolom card">
+       <div class="display">
+           <h1 id="displayNumber">0</h1>
+       </div>
+       <div class="flex-konte-baris">
+           <div class="tombol">7</div>
+           <div class="tombol">8</div>
+           <div class="tombol">9</div>
+           <div class="tombol negatif">+/-</div>
+       </div>
+       <div class="flex-konte-baris">
+           <div class="tombol">4</div>
+           <div class="tombol">5</div>
+           <div class="tombol">6</div>
+           <div class="tombol operator">-</div>
+       </div>
+       <div class="flex-konte-baris">
+           <div class="tombol">1</div>
+           <div class="tombol">2</div>
+           <div class="tombol">3</div>
+           <div class="tombol operator">+</div>
+       </div>
+       <div class="flex-konte-baris">
+           <div class="tombol clear">CE</div>
+           <div class="tombol">0</div>
+           <div class="tombol samadengan double">=</div>
+       </div>
+   </div>
+   <div class="history card">
+       <h2>Riwayat Perhitungan</h2>
+       <table>
+           <thead>
+               <tr>
+               <th>Angka Pertama</th>
+               <th>Operator</th>
+               <th>Angka Kedua</th>
+               <th>Angka Hasil</th>
+            </tr>
+           </thead>
+           <tbody id="historylist"></tbody>
+       </table>
+   </div>
+   <script src="assets/storage.js"></script>
+   <script src="assets/kal.js"></script>
+</body>
+ 
+</html>
